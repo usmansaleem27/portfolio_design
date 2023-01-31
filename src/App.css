@@ -1,0 +1,781 @@
+/************************************ Table of Contents  *****************************
+
+1. Carousel A
+2. Carousel B
+3. Footer Creater Msg
+4. Footer Social Links
+5. Contact Carousel
+6. Talk Form Section
+7. Adress Section
+8 .Navbar Here
+9. About Page CSS
+10. About Images Cards
+11. Developers Cards
+13. Timeline
+12. Advertisement Cards
+
+
+*************************************************************************************/
+
+/* Font Family Here  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oxygen&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/************************************** 1. Carousel A  ****************************************/
+.carousel_a {
+    position: relative;
+}
+
+.carousel_icons {
+    position: absolute;
+    bottom: 8px;
+    right: 1%;
+    z-index: 1;
+}
+
+.carousel_icons i {
+    font-size: 13px;
+    padding: 3px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button in Carousel  */
+.work_station {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.work_station:hover {
+    background-color: rgba(170, 166, 166, 0.562);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.work_station:hover .my_button {
+    position: relative;
+    left: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.work_station h3 {
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+    opacity: 1;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.my_button {
+    color: white;
+    background-color: #1D1D1D;
+    border: none;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-right: 80px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+.my_button:hover {
+    color: white;
+
+}
+
+
+.my_button:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0;
+    background-color: white;
+    margin-right: 20px;
+    width: 35px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.my_button:hover::after {
+    transform: rotate(180deg);
+}
+
+.my_button a {
+    color: white;
+    text-decoration: none;
+}
+.my_button a:hover {
+    color: white;
+}
+
+/************************************** 2. Carousel B  ****************************************/
+.carousel_b {
+    position: relative;
+}
+
+.carousel_icons_b {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    z-index: 1;
+}
+
+.carousel_icons_b i {
+    font-size: 13px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* Portfolio Image  */
+.portfolio_logo {
+    position: absolute;
+    top: 11%;
+    left: 6%;
+}
+
+.portfolio_logo img {
+    cursor: pointer;
+}
+
+/************************************** 3. Footer Creater Msg ****************************************/
+.creater_msg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.my_note a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.my_note a:hover {
+    color: white;
+
+}
+
+.my_note p {
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+/************************************** 4. Footer Social Links ****************************************/
+.social_links_hover {
+    position: relative;
+}
+
+.my_twitter {
+    color: white;
+    font-size: 14px;
+    font-weight: -100;
+    font-family: 'Amatic SC', cursive;
+}
+
+.social_links .my_twitter:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: white;
+    width: 35px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.social_links .my_twitter:hover::before {
+    transform: rotate(180deg);
+}
+
+.footer_social_links {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/************************************** 5. Contact Carousel  ****************************************/
+
+.contact_carousel {
+    position: relative;
+}
+
+.contact_carousel_icons {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+.contact_carousel_icons i {
+    cursor: pointer;
+}
+
+
+/************************************** 6. Talk Form Section  ****************************************/
+
+.talk_section {
+    position: relative;
+}
+
+.talk_heading {
+    font-size: 6rem;
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 30px;
+
+}
+
+.talk_section p::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: black;
+    width: 120px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.talk_para {
+    position: relative;
+
+}
+
+.talk_para_p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.talk_para_p:after {
+    content: "";
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    background-color: black;
+    width: 50px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.fullfill_form_p {
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.form_input input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.form_input input:focus {
+    outline: none;
+}
+
+.form_text {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    padding-left: 10px;
+}
+
+.submit_form {
+    background-color: #EFEEEE;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.submit_form:hover {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+
+/************************************** 7. Adress Section  ****************************************/
+.contact_icon i {
+    color: #6b6a6a;
+}
+
+.contact_icon i:hover {
+    cursor: pointer;
+    color: #1D1D1D;
+}
+
+.adress_font {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.footer_font {
+    color: #8d8a8a;
+}
+
+.footer_vr {
+    border-right: 1px solid #C8C9CA;
+    padding-bottom: 100px;
+}
+
+.footer_creater_note a {
+    font-size: 15px;
+    color: #747070;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer_creater_note p {
+    font-size: 15px;
+    color: #8d8a8a;
+}
+
+.my_links {
+    color: #747070;
+}
+
+.my_links:hover {
+    cursor: pointer;
+    color: #1D1D1D;
+}
+
+.my_links:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: black;
+    width: 35px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.my_links:hover::before {
+    transform: rotate(180deg);
+}
+
+
+.google_maps {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.click_back {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.click_back:hover {
+    background-color: #1D1D1D;
+}
+
+.click_back a {
+    text-decoration: none;
+}
+
+
+
+
+/************************************** 8 .Navbar Here  *********************************/
+
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.p-color {
+    color: #1d1d1d;
+}
+
+.p-color-bg {
+    background: #1d1d1d;
+}
+
+
+
+.top_navbar {
+    background: #f4f3f3;
+}
+
+.top_navbar .left-button,
+.top_navbar .right-button {
+    width: 132px;
+    height: 180px;
+}
+
+.top_navbar .left-button a,
+.top_navbar .right-button a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: table;
+    text-align: center;
+    position: relative;
+
+}
+
+.top_navbar .left-button a span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.top_navbar .right-button a span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.top_navbar .left-button a i {
+    font-size: 22px;
+    line-height: 39px;
+    padding: 0 22px 0 14px;
+    vertical-align: middle;
+    margin-right: 13px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+}
+
+.top_navbar .left-button a:before {
+    content: '';
+    width: 1px;
+    height: 39px;
+    background: #363636;
+    position: absolute;
+    top: 69px;
+    left: 69px;
+}
+
+.top_navbar .right-button a {
+    text-decoration: none;
+}
+
+.top_navbar .left-button a {
+    text-decoration: none;
+}
+
+.top_navbar .right-button a i {
+    font-size: 22px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.left-button a:hover {
+    background: #000;
+}
+
+.right-button a:hover {
+    background-color: #000;
+}
+
+.menu_items ul {
+    margin-right: 23px;
+}
+
+.menu_items ul li {
+    display: inline-block;
+}
+
+.menu_items ul li a {
+    font-size: 15px;
+    color: #292929;
+    background: transparent !important;
+    line-height: 180px;
+    padding: 0 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu_items ul li a:hover {
+    color: #777777;
+}
+
+/* 
+.left-button a i:hover i {
+    transform: rotate(360deg) !important;
+}
+
+.right-button:hover i {
+    transform: rotate(360deg);
+
+} */
+
+
+/************************************** 9. About Page CSS Here  *********************************/
+
+.about_top {
+    position: relative;
+}
+
+.about_top h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.about_top h4::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    width: 70px;
+    height: 1px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/************************************* 10. About Images Cards  ***************************************/
+
+.about_img {
+    position: relative;
+}
+
+.about_img .custom_opacity {
+    position: absolute;
+    width: 100%;
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 42px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.custom_opacity .image_inner_text {
+    position: relative;
+    top: 30%;
+    left: 25%;
+    font-weight: 300;
+    font-size: 60px;
+    font-family: sans-serif !important;
+    color: #000000;
+    
+}
+
+.image_inner_text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: black;
+    width: 350px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.interior_p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.summer_intensive{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.summer_numbers{
+    font-size: 60px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.summer_paragraphs{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/************************************** 11. Developers Cards Here ************************************/
+
+.numbers{
+    padding-bottom: 65px;
+}
+
+.numbers .rect {
+    position: relative;
+    background: white;
+    margin: 1rem;
+    box-shadow: 2px 10px 20px 0px  var(--primary);
+    transition: 0.3s ease-in-out;
+}
+.rect img{
+    transition: all 0.6s ease-in-out;
+}
+
+.overlay_card {
+    position: absolute;
+    top: 15px;
+    background-color: rgba(245, 240, 240, 0.75);
+    width: 91%;
+    height: 93%;
+    display: none;
+}
+
+.rect:hover .overlay_card {
+    display: block;
+
+}
+
+.overlay_card_list ul li{
+    list-style: none;
+}
+.overlay_card_list ul li a{
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.overlay_card h6::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: black;
+    width: 1px;
+    height: 25px;
+}
+
+.overlay_card h6::after{
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    background-color: black;
+    width: 1px;
+    height: 25px;
+}
+
+/****************************************** 13. Timeline Here ******************************************/
+
+.timeline_about {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .timeline_about::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: rgb(223, 219, 219);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline_container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .timeline_container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: white;
+    border: 1px solid rgb(223, 219, 219);
+    top: 15px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .timeline_container:hover:after {
+    background-color: black;
+  }
+  .left_time {
+    left: 0;
+  }
+  .time_line_font{
+    font-family: 'Source Code Pro', monospace;
+  }
+  .right_time {
+    left: 50%;
+  }
+  .left_time::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right_time::after {
+    left: -15px;
+  }
+  
+  .content_timeline {
+    background-color: white;
+    position: relative;
+  }
+
+/****************************************** 12. Advertisement Cards Here  ***************************************/
+
+.reading_button{
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 0;
+}
+.reading_button:hover{
+    border: 1px solid black;
+    background-color: #e3e3e4;
+
+}
+
+.adv_readings{
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.adv_p{
+    font-size: 15px;
+}
+
+.google_maps iframe{
+    width: 100%;
+    height: 500px;
+}
+
+
+#my_container input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
